@@ -262,7 +262,7 @@ function progressBars() {
     rect(t, half - (th / 2), brLength, th);
 		progressEmpty();
 		const check = min >= 21 ? (
-			min > 40 ? 0 : map(min, 21, 40, brLength, 0)
+			min > 40 ? 0 : map(min, 21, 40, brLength - (brLength / 20), 0)
 		) : brLength;
     rect(t, half - (th / 2), check, th);
 	}
@@ -291,7 +291,7 @@ function progressBars() {
     rect(t, half - (th / 2), midLength, th);
 		progressEmpty();
 		const check = min >= 21 ? (
-			min > 40 ? 0 : map(min, 21, 40, midLength, 0)
+			min > 40 ? 0 : map(min, 21, 40, midLength - (midLength / 20), 0)
 		) : midLength;
     rect(t, half - (th / 2), check, th);
 	}
